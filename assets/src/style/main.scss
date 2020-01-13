@@ -40,5 +40,7 @@
 @import "../../../node_modules/bootstrap/scss/_utilities";
 @import "../../../node_modules/bootstrap/scss/_print";
 
+@import "../../../node_modules/select2/src/scss/core";
+
 // Подключение своих SCSS файлов
 @import "my";

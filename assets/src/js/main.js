@@ -18,5 +18,7 @@
 //= ../../../node_modules/bootstrap/js/dist/tab.js
 //= ../../../node_modules/bootstrap/js/dist/toast.js
 
+//= ../../../node_modules/select2/dist/js/select2.min.js
+
 // Импортируем другие js-файлы
 //= script.js
