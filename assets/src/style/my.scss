@@ -1,6 +1,10 @@
 html, body {
   background: #f5f5eb;
 }
+body {
+  //background-color: white;
+  font: 13px/20px "Exo 2", Arial, sans-serif;
+}
 .br0 {
   border-radius: 0 !important;
   -webkit-appearance: none;
@@ -22,14 +26,34 @@ html, body {
   //}
 
   .select2-selection__rendered {
-    line-height: 35px !important;
+    line-height: 37px !important;
   }
 .select2-selection--single {
-  height: 35px !important;
+  height: 37px !important;
+}
+.select2-container--default{
+  margin: auto;
 }
 .select2-container--default .select2-selection--single{
   border-radius: 0 !important;
 }
 .select2-container--default .select2-selection--single .select2-selection__arrow b{
   margin-top: 1px !important;
+}
+
+.phone-number{
+  margin: auto 10px auto;
+}
+
+.phone-number a, .phone-number i{
+  color: #ffffff;
+  font-size: 1rem;
+}
+.phone-number i{
+  //margin-right: 7px;
+  padding: 3px 7px 0 0;
+}
+
+.callback{
+  margin: 5px;
 }
