@@ -5,6 +5,10 @@ body {
   //background-color: white;
   font: 13px/20px "Exo 2", Arial, sans-serif;
 }
+:active, :hover, :focus {
+  outline: 0;
+  outline-offset: 0;
+}
 .br0 {
   border-radius: 0 !important;
   -webkit-appearance: none;
@@ -56,4 +60,58 @@ body {
 
 .callback{
   margin: 5px;
+}
+
+
+.top-menu{
+
+  $black: $green;
+  $navbar-light-color:                rgba($black, .5);
+  $navbar-light-hover-color:          rgba($black, .7);
+  $navbar-light-active-color:         rgba($black, .9);
+  $navbar-light-disabled-color:       rgba($black, .3);
+  $navbar-light-toggler-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='#{$navbar-light-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") ;
+  $navbar-light-toggler-border-color: rgba($black, .1);
+
+  .navbar-toggler-icon {
+    background-image: escape-svg($navbar-light-toggler-icon-bg);
+  }
+  .navbar-toggler{
+    border-color: $green;
+  }
+
+  a{
+    color: $gray-800;
+    font-size: 1rem;
+    font-weight: 200;
+  }
+
+.active{
+  a{
+    color: $green !important;
+  }
+}
+
+  .region-block{
+
+    display: flex;
+    flex-direction: row;
+
+    a{
+      color: $green;
+      position: relative;
+    }
+    a::after{
+      transition: all 0.2s ease-in-out;
+      position: absolute;
+      display: block;
+      bottom: 0;
+      width: 100%;
+      height: 0;
+      content: "";
+      left: 0;
+      border-bottom: 1px dashed $green;
+    }
+  }
+
 }
