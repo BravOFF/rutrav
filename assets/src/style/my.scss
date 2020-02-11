@@ -494,3 +494,43 @@ nav.navbar .dropdown:hover > .dropdown-menu {
   padding: 6px 8px 4px;
 }
 
+
+
+
+.main-footer {
+
+  .heading {
+    color: $yellow;
+    font-size: 1.3rem;
+  }
+
+  .nav-link {
+    color: $green;
+    font-weight: 300;
+    font-size: 1rem;
+  }
+
+  .phone a, .adress {
+    color: $green;
+    font-size: 1.1rem;
+    line-height: 2.5rem;
+    font-weight: 200;
+
+    .demo-icon{
+      color: $yellow;
+    }
+  }
+
+  hr{
+    background-color: $yellow;
+  }
+
+  .copyright{
+    color: $green;
+    font-size: 1rem;
+    span{
+      color: $yellow;
+    }
+  }
+
+}
