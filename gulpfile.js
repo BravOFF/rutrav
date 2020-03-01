@@ -34,6 +34,7 @@ var config = {
 	server: {
 		baseDir: './assets/build'
 	},
+	// port: 80,
 	notify: false
 };
 

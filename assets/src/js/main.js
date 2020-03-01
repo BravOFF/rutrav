@@ -20,5 +20,14 @@
 
 //= ../../../node_modules/select2/dist/js/select2.min.js
 
+//= ../../../node_modules/owl.carousel/src/js/owl.carousel.js
+//= ../../../node_modules/owl.carousel/src/js/owl.animate.js
+//= ../../../node_modules/owl.carousel/src/js/owl.autoheight.js
+//= ../../../node_modules/owl.carousel/src/js/owl.autorefresh.js
+//= ../../../node_modules/owl.carousel/src/js/owl.hash.js
+//= ../../../node_modules/owl.carousel/src/js/owl.lazyload.js
+//= ../../../node_modules/owl.carousel/src/js/owl.navigation.js
+
+
 // Импортируем другие js-файлы
 //= script.js

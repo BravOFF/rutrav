@@ -534,3 +534,110 @@ nav.navbar .dropdown:hover > .dropdown-menu {
   }
 
 }
+
+.tizer-zakaz-l{
+  position: relative;
+
+}
+
+.tizer-zakaz-l{
+  transition: all 0.5s ease-in-out;
+  background: #fdcb1c8c;
+  font-size: 1.1rem;
+  border-right: 1px solid $green;
+}
+.tizer-zakaz-r{
+  transition: all 0.5s ease-in-out;
+font-size: 1.1rem;
+  background: $yellow;
+  font-weight: bold;
+}
+
+.tizer-zakaz:hover{
+
+  color: $green;
+
+}
+
+.conhent-text{
+  font-size: 1rem;
+}
+
+.tizer-fake{
+  float:right;
+  margin-left:15px;
+  margin-bottom:40px;
+  background-color: $yellow;
+  text-align: center;
+  padding: 1rem;
+
+
+  .fake-alter{
+    padding: 1rem;
+    i{
+      font-size: 3.5rem;
+    }
+
+  }
+  p{
+    font-size: 1.4rem;
+  }
+}
+
+
+.carousel-product{
+  .item{
+    width: 18rem;
+    border-radius: 0 !important;
+  }
+  .card-img-top{
+    width: auto !important;
+    height: 180px;
+    object-fit: contain;
+  }
+}
+
+.owl-nav .owl-prev-c, .owl-nav .owl-next-c{
+  color: $green !important;
+  font-size: 5rem !important;
+  position: absolute;
+  margin: 0 !important;
+  border-radius: 0 !important;
+  height: 100%;
+  top: 0;
+  border: none !important;
+
+  transition: all 0.2s ease-in-out;
+
+}
+
+
+.owl-prev-c:hover, .owl-next-c:hover, .owl-prev-c:active, .owl-next-c:active, .owl-prev-c:focus, .owl-next-c:focus, .owl-prev-c:visited, .owl-next-c:visited{
+  outline: none !important;
+}
+
+.owl-nav .owl-prev-c:hover, .owl-nav .owl-next-c:hover{
+  padding: 30px;
+
+}
+
+
+.carousel-product .owl-nav{
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+.carousel-product:hover .owl-nav{
+  opacity: 1;
+}
+
+.owl-nav .owl-prev-c{
+  left: 0;
+  background: rgb(245,245,235) !important;
+  background: linear-gradient(90deg, rgba(245,245,235,1) 0%, rgba(245,245,235,0) 97%) !important;
+}
+
+.owl-nav .owl-next-c{
+  right: -1px;
+  background: rgb(245,245,235) !important;
+  background: linear-gradient(270deg, rgba(245,245,235,1) 0%, rgba(245,245,235,0) 97%) !important;
+}
