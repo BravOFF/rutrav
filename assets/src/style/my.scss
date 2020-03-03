@@ -559,7 +559,7 @@ font-size: 1.1rem;
 
 }
 
-.conhent-text{
+.content-text{
   font-size: 1rem;
 }
 
@@ -584,11 +584,65 @@ font-size: 1.1rem;
   }
 }
 
+.title-list-product{
+
+  display: flex;
+  margin-bottom: 0.5rem;
+  span{
+    font-size: 1.7rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-top: -3px;
+    margin-left: -2px;
+    border-bottom: 1px solid $gray-900;
+    width: 100%;
+  }
+}
+
+.title-list-product:before {
+  background-image: url("/img/neprihot.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: '';
+  width: 60px;
+
+
+
+}
 
 .carousel-product{
+  .owl-stage{
+    display: flex;
+  }
   .item{
     width: 18rem;
     border-radius: 0 !important;
+    height: 100%;
+    .card-title{
+      font-size: 1.2rem;
+      text-align: center;
+    }
+    .card-body{
+      display: flex;
+      flex-direction: column;
+    }
+    .hr{
+      margin-top: auto;
+    }
+    .pricing-card-title{
+      font-size: 1.5rem;
+      font-weight: 500;
+      line-height: 1.2;
+      margin-bottom: 0.75rem;
+    }
+    .weight{
+      padding-left: 20px;
+      background: url('/img/tara.png') 3px 50% no-repeat;
+      margin-bottom: 1rem;
+    }
+    .stretched-link{
+      border-radius: unset;
+    }
   }
   .card-img-top{
     width: auto !important;
@@ -640,4 +694,27 @@ font-size: 1.1rem;
   right: -1px;
   background: rgb(245,245,235) !important;
   background: linear-gradient(270deg, rgba(245,245,235,1) 0%, rgba(245,245,235,0) 97%) !important;
+}
+
+
+.tizer-konsult{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  justify-content: space-between;
+  .block{
+    width: calc((100%/5) - 30px);
+    .img{
+      height: 100px;
+      img{
+        height: 100%;
+      }
+    }
+    .text{
+      margin-top: auto;
+      font-size: 1.2rem;
+    }
+  }
 }

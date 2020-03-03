@@ -11,10 +11,10 @@ $(document).ready(function() {
             margin:10,
             nav:true,
             autoWidth:true,
-            autoHeight:false,
+            autoHeight:true,
             autoHeightClass: 'owl-height',
-            center: true,
-            loop:true,
+            // center: true,
+            // loop:true,
             dots: false,
             lazyLoad:true,
             navClass: ["owl-prev-c","owl-next-c"]
