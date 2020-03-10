@@ -1,6 +1,9 @@
 // Переопределение дефолтных значений переменных Bootstrap 4 и определение своих
 @import "variables";
 
+@import "exotwo";
+@import "fontello";
+
 // Подключение нужных SCSS исходников Bootstrap 4
 @import "../../../node_modules/bootstrap/scss/_functions";
 @import "../../../node_modules/bootstrap/scss/_variables";
@@ -39,6 +42,15 @@
 @import "../../../node_modules/bootstrap/scss/_spinners";
 @import "../../../node_modules/bootstrap/scss/_utilities";
 @import "../../../node_modules/bootstrap/scss/_print";
+
+@import "../../../node_modules/owl.carousel/src/scss/owl.carousel";
+@import "../../../node_modules/owl.carousel/src/scss/owl.theme.default";
+@import "../../../node_modules/owl.carousel/src/scss/owl.theme.green";
+
+@import "../../../node_modules/select2/src/scss/core";
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/regular";
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/solid";
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
 
 // Подключение своих SCSS файлов
 @import "my";
