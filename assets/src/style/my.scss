@@ -60,6 +60,11 @@ body {
 
 .callback{
   margin: 5px;
+  @include media-breakpoint-down(xs) {
+    margin: 0 15px;
+  }
+
+
 }
 
 
@@ -114,6 +119,10 @@ body {
     }
   }
 
+}
+
+.logo-img{
+  max-width: 100%;
 }
 
 .main-menu{
@@ -304,7 +313,7 @@ nav.navbar .dropdown:hover > .dropdown-menu {
   }
 
 
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(sm) {
     .heading{
       display: none;
     }
@@ -700,12 +709,25 @@ font-size: 1.1rem;
 .tizer-konsult{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   text-align: center;
   margin-top: 3rem;
   margin-bottom: 3rem;
-  justify-content: space-between;
+  justify-content: space-evenly;
   .block{
+    margin-top: 1.5rem;
+    min-width: 156px;
     width: calc((100%/5) - 30px);
+
+    @include media-breakpoint-down(md) {
+      min-width: 200px;
+      width: calc((100%/3) - 30px);
+    }
+
+    @include media-breakpoint-down(sm) {
+      width: calc((100%/3) - 30px);
+    }
+
     .img{
       height: 100px;
       img{
