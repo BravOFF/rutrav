@@ -176,12 +176,45 @@ BX.Main.MenuComponent.CatalogHorizontal = (function()
         {
             if (!menuMobile)
             {
+
+                closeButton = BX.create("button", {
+                    attrs: {
+                        className: 'close',
+                        'type': 'button',
+                        'arie-label': 'Close'
+                    },
+                    children: [BX.create('span', {
+                        attrs: {
+                            'aria-hidden': 'true'
+                        },
+                        text: '×'
+                    })]
+                });
+                HeaderMenuBlock = BX.create("div", {
+                    attrs: {
+                        className: 'bx-menu-top-line bx-opened',
+                        "data-role" : "bx-menu-button-mobile"
+                    },
+                    // text: 'Закрыть',
+                    events: {
+                        "click": function () {
+                            if (BX.hasClass(this, "bx-opened"))
+                            {
+                                BX.removeClass(menuMobile, 'bx-opened');
+                                document.body.style.overflow = "";
+                                BX.removeClass(document.body, 'bx-opened');
+                            }
+                        }
+                    },
+                    children: [closeButton]
+                });
+
                 menuMobile = BX.create("div", {
                     attrs: {
                         className: "bx-aside-nav",
                         "data-role" : "bx-menu-mobile"
                     },
-                    children: [ BX.clone(BX("ul_" + this.menuBlockId)) ]
+                    children: [HeaderMenuBlock, BX.clone(BX("ul_" + this.menuBlockId)) ]
                 });
                 document.body.insertBefore(menuMobile, document.body.firstChild);
             }
@@ -189,11 +222,16 @@ BX.Main.MenuComponent.CatalogHorizontal = (function()
             if (!menuMobileButton)
             {
                 menuMobileButton = BX.create("div", {
-                    attrs: {className: "bx-aside-nav-control bx-closed", "data-role" : "bx-menu-button-mobile"},
+                    attrs: {
+                        className: "bx-aside-nav-control bx-closed",
+                        "data-role" : "bx-menu-button-mobile"},
+                    // text: 'Каталог',
                     children: [
-                        BX.create("i", {
-                            attrs: {className: "bx-nav-bars"}
-                        })
+                        BX.create("span", {
+                            attrs: {className: "navbar-toggler-icon"},
+                            // text: 'Каталог'
+                        }),
+                        'Каталог'
                     ],
                     events: {
                         "click" : function() {
