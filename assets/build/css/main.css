@@ -14097,7 +14097,7 @@ nav.navbar .dropdown:hover > .dropdown-menu {
       color: #000000; }
       .index-banners .elem-wrap .elem .text-wrap .name {
         display: block;
-        max-height: 40px;
+        max-height: 100px;
         overflow: hidden;
         margin-bottom: 10px;
         font-size: 18px;
